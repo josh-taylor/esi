@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Python API to the ESI API for monitoring and controlling your thermostat.
+Python API client to the [ESI Controls] API for monitoring and controlling your thermostat.
 
 ## Usage
 
@@ -11,7 +11,7 @@ Python API to the ESI API for monitoring and controlling your thermostat.
 You need to log in and authenticate the client.
 
 ```python
-from esi import *
+from esi_controls import *
 
 client = Esi()
 user = client.login()
@@ -36,3 +36,5 @@ You can update the current temperature
 ```python
 client.set_thermostat(device.id, "180")
 ```
+
+[ESI Controls]: https://www.esicontrols.co.uk/
